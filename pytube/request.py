@@ -155,8 +155,10 @@ def stream(
             # Try to execute the request, ignoring socket timeouts
             try:
                 response = _execute_request(
+                    # url,
                     url + f"&range={downloaded}-{stop_pos}",
                     method="GET",
+                    # headers={"Range": range_header},
                     timeout=timeout
                 )
             except URLError as e:
