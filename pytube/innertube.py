@@ -36,7 +36,7 @@ _default_clients = {
                 'clientVersion': '2.20200720.00.02'
             }
         },
-        'header': {
+                'header': {
             'User-Agent': 'Mozilla/5.0'
         },
         'api_key': 'AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8'
@@ -55,18 +55,19 @@ _default_clients = {
         'api_key': 'AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8'
     },
     'IOS': {
-        'context': {
-            'client': {
-                'clientName': 'IOS',
-                'clientVersion': '17.33.2',
-                'deviceModel': 'iPhone14,3'
-            }
-        },
-        'header': {
-            'User-Agent': 'com.google.ios.youtube/'
-        },
+    'context': {
+        'client': {
+            'clientName': 'IOS',
+            'clientVersion': '17.33.2',
+            'deviceModel': 'iPhone14,3'
+        }
+    },
+    'header': {
+        'User-Agent': 'com.google.ios.youtube/'
+    },
         'api_key': 'AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8'
     },
+
 
     'WEB_EMBED': {
         'context': {
@@ -76,7 +77,7 @@ _default_clients = {
                 'clientScreen': 'EMBED'
             }
         },
-        'header': {
+                'header': {
             'User-Agent': 'Mozilla/5.0'
         },
         'api_key': 'AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8'
@@ -384,9 +385,9 @@ class InnerTube:
             else:
                 self.fetch_bearer_token()
                 headers['Authorization'] = f'Bearer {self.access_token}'
-
+        
         headers.update(self.header)
-
+        
         response = request._execute_request(
             endpoint_url,
             'POST',
