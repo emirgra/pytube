@@ -50,9 +50,9 @@ setup(
     long_description=long_description,
     zip_safe=True,
     python_requires=">=3.7",
-    project_urls={
-        "Bug Reports": "https://github.com/pytube/pytube/issues",
-        "Read the Docs": "https://pytube.io",
-    },
+    #project_urls={
+    #    "Bug Reports": "https://github.com/pytube/pytube/issues",
+    #    "Read the Docs": "https://pytube.io",
+    #},
     keywords=["youtube", "download", "video", "stream",],
 )
