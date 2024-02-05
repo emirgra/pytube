@@ -18,7 +18,7 @@ setup(
     version=__version__,  # noqa: F821
     author="Ronnie Ghose, Taylor Fox Dahlin, Nick Ficano",
     author_email="hey@pytube.io",
-    packages=["pytube", "pytube.contrib"],
+    #packages=["pytube", "pytube.contrib"],
     package_data={"": ["LICENSE"],},
     url="https://github.com/emirgra/pytube",
     license="The Unlicense (Unlicense)",
