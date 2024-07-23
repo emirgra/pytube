@@ -45,7 +45,8 @@ _default_clients = {
         'context': {
             'client': {
                 'clientName': 'ANDROID',
-                'clientVersion': '17.31.35',
+                # 'clientVersion': '17.31.35',
+                'clientVersion': '19.08.35',
                 'androidSdkVersion': 30
             }
         },
@@ -58,7 +59,8 @@ _default_clients = {
     'context': {
         'client': {
             'clientName': 'IOS',
-            'clientVersion': '17.33.2',
+            # 'clientVersion': '17.33.2',
+            'clientVersion': '19.08.35',
             'deviceModel': 'iPhone14,3'
         }
     },
@@ -86,7 +88,8 @@ _default_clients = {
         'context': {
             'client': {
                 'clientName': 'ANDROID_EMBEDDED_PLAYER',
-                'clientVersion': '17.31.35',
+                # 'clientVersion': '17.31.35',
+                'clientVersion': '19.08.35',
                 'clientScreen': 'EMBED',
                 'androidSdkVersion': 30,
             }
@@ -100,7 +103,8 @@ _default_clients = {
         'context': {
             'client': {
                 'clientName': 'IOS_MESSAGES_EXTENSION',
-                'clientVersion': '17.33.2',
+                # 'clientVersion': '17.33.2',
+                'clientVersion': '19.08.35',
                 'deviceModel': 'iPhone14,3'
             }
         },
@@ -126,7 +130,8 @@ _default_clients = {
         'context': {
             'client': {
                 'clientName': 'ANDROID_MUSIC',
-                'clientVersion': '5.16.51',
+                # 'clientVersion': '5.16.51',
+                'clientVersion': '6.40.52',
                 'androidSdkVersion': 30
             }
         },
@@ -139,7 +144,8 @@ _default_clients = {
         'context': {
             'client': {
                 'clientName': 'IOS_MUSIC',
-                'clientVersion': '5.21',
+                # 'clientVersion': '5.21',
+                'clientVersion': '6.41',
                 'deviceModel': 'iPhone14,3'
             }
         },
@@ -214,6 +220,10 @@ _default_clients = {
         'api_key': 'AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8'
     },
 }
+
+_default_clients["ANDROID_MUSIC"] = _default_clients["ANDROID_CREATOR"]
+
+
 _token_timeout = 1800
 _cache_dir = pathlib.Path(__file__).parent.resolve() / '__cache__'
 _token_file = os.path.join(_cache_dir, 'tokens.json')
